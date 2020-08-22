@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div class="row">
+<div class="col-md-12"> 
+<div class="card curve">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect" x="0" y="0" height="450" width="400"
+		  fill="transparent" />
+            <!-- slide up-->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+            <!-- slide up and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+            <!-- slide down and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+            <!-- slide down and curve out -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+            <!-- curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+            <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<div class="card">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="q" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect1" x="0" y="0" height="450" width="400" fill="transparent" />
+            <animate xlink:href="#q" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect1.mouseover" end="dummyRect1.mouseout" dur="0.1s" id="bounce11" />
+            <animate xlink:href="#q" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce11.end" end="dummyRect1.mouseout" dur="0.15s" id="bounce12" />
+            <animate xlink:href="#q" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce12.end" end="dummyRect1.mouseout" dur="0.15s" id="bounce13" />
+            <animate xlink:href="#q" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce13.end" end="dummyRect1.mouseout" dur="0.1s" id="bounce14" />
+            <animate xlink:href="#q" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce14.end" end="dummyRect1.mouseout" dur="0.05s" id="bounce15" />
+            <animate xlink:href="#q" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect1.mouseout" dur="0.15s" id="bounce1Out" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+<div class="col-md-6 col-sm-12">
+<div class="card curve">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="r" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect2" x="0" y="0" height="450" width="400" fill="transparent" />
+            <animate xlink:href="#r" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect2.mouseover" end="dummyRect2.mouseout" dur="0.1s" id="bounce21" />
+            <animate xlink:href="#r" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce21.end" end="dummyRect2.mouseout" dur="0.15s" id="bounce22" />
+            <animate xlink:href="#r" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce22.end" end="dummyRect2.mouseout" dur="0.15s" id="bounce23" />
+            <animate xlink:href="#r" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce23.end" end="dummyRect2.mouseout" dur="0.1s" id="bounce24" />
+            <animate xlink:href="#r" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce24.end" end="dummyRect2.mouseout" dur="0.05s" id="bounce25" />
+            <animate xlink:href="#r" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect2.mouseout" dur="0.15s" id="bounce2Out" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-12">
+<div class="card">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="a" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect3" x="0" y="0" height="450" width="400" fill="transparent" />
+            <animate xlink:href="#a" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect3.mouseover" end="dummyRect3.mouseout" dur="0.1s" id="bounce31" />
+            <animate xlink:href="#a" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce31.end" end="dummyRect3.mouseout" dur="0.15s" id="bounce32" />
+            <animate xlink:href="#a" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce32.end" end="dummyRect3.mouseout" dur="0.15s" id="bounce33" />
+            <animate xlink:href="#a" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce33.end" end="dummyRect3.mouseout" dur="0.1s" id="bounce34" />
+            <animate xlink:href="#a" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce34.end" end="dummyRect3.mouseout" dur="0.05s" id="bounce35" />
+            <animate xlink:href="#a" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect1.mouseout" dur="0.15s" id="bounce3Out" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="card curve">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="b" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect4" x="0" y="0" height="450" width="400" fill="transparent" />
+            <animate xlink:href="#b" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect4.mouseover" end="dummyRect4.mouseout" dur="0.1s" id="bounce41" />
+            <animate xlink:href="#b" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce41.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce42" />
+            <animate xlink:href="#b" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce42.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce43" />
+            <animate xlink:href="#b" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce43.end" end="dummyRect4.mouseout" dur="0.1s" id="bounce44" />
+            <animate xlink:href="#b" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce44.end" end="dummyRect4.mouseout" dur="0.05s" id="bounce45" />
+            <animate xlink:href="#b" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect4.mouseout" dur="0.15s" id="bounce4Out" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="card curve">
+    <div class="footer">
+        <div class="connections">
+            <div class="connection facebook"><div class="icon"></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg class="curve">
+            <path id="c" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect5" x="0" y="0" height="450" width="400" fill="transparent" />
+            <animate xlink:href="#c" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect5.mouseover" end="dummyRect5.mouseout" dur="0.1s" id="bounce51" />
+            <animate xlink:href="#c" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce51.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce52" />
+            <animate xlink:href="#c" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce52.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce53" />
+            <animate xlink:href="#c" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce53.end" end="dummyRect4.mouseout" dur="0.1s" id="bounce54" />
+            <animate xlink:href="#c" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce54.end" end="dummyRect4.mouseout" dur="0.05s" id="bounce55" />
+            <animate xlink:href="#c" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect5.mouseout" dur="0.15s" id="bounce5Out" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
