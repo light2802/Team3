@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+.neon{
+	top: 5%;
+	font-family: 'Quicksand', sans-serif;
+	position: absolute;
+	left: 50%;
+	font-weight: 800;
+	transform: translate(-50%, -50%);
+	margin-top: 10vw;
+	padding: 0 20px;
+	font-size: 6em;
+	color: #8d70c2;
+	text-shadow: 0 0 20px #5b00ff;
+
+}
+.neon:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #5b00ff;
+	filter: blur(15px);
+}
+.neon:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #5b00ff;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);  
+}
+
+.glow {
+	left: calc(50% - 17rem);
+	position: relative;
+/*	text-align: center;*/
+	padding-bottom: 5rem;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
